@@ -1,11 +1,10 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Layout.module.css";
 import {FaLinkedin, FaGithub} from "react-icons/fa";
 import Link from "next/link";
 
 const emailChars = [104, 101, 108, 108, 111, 64, 115, 104, 114, 101, 121, 97, 115, 115, 97, 110, 103, 104, 118, 105, 46, 109, 101];
 const email = emailChars.map(c => String.fromCharCode(c)).join("");
-
 export default function Layout({children}: { children: React.ReactNode }) {
     return (
         <>
@@ -25,7 +24,11 @@ export default function Layout({children}: { children: React.ReactNode }) {
                     <a href="/projects">Projects</a>
                 </div>
             </nav>
-      {children}
+
+            <div className={styles.contentWrapper}>
+                {children}
+            </div>
+
             <footer className={styles.footer}>
                 <div>
                     <b>Phone</b><br/>
