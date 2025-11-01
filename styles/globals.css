@@ -1,129 +1,17 @@
-/* Reset box-sizing for predictable layouts */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-/* Set base font styles for the entire website */
-html {
-    font-family: 'Inter', 'Roboto', 'Arial', sans-serif; /* Modern, clean fonts */
-    font-size: 16px; /* Base font size, easy to scale with rem */
-    color: #222; /* Default text color for readability */
-    background-color: #fefefe; /* Light background */
-    margin: 0;
+html, body {
     padding: 0;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased; /* Slight smoothing for better rendering */
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%; /* Prevent font scaling in Safari */
-}
-
-/* Body element inherits from html */
-body {
     margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: 1rem; /* Use rems for responsiveness */
-    color: inherit;
-    background-color: inherit;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fefefe;
+    color: #222;
 }
 
-/* Link styles for better accessibility */
 a {
-    color: #0070f3; /* Industry standard link color, change if needed */
+    color: inherit;
     text-decoration: none;
-    transition: color 0.2s ease-out, text-decoration 0.2s ease-out;
-}
-a:hover, a:focus {
-    color: #0056b3;
-    outline: none;
-    text-decoration: underline;
 }
 
-/* Focus outlines for accessibility */
-*:focus {
-    outline: 2px dashed #0056b3; /* Clear focus indicator for keyboard navigation */
-    outline-offset: 4px;
-}
-
-/* Headings standardization for hierarchy */
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 1rem 0;
-    font-weight: 700; /* Bold headings */
-    line-height: 1.2;
-}
-h1 {
-    font-size: 2.5rem; /* Responsive heading size */
-}
-h2 {
-    font-size: 2rem;
-}
-/* Adjust other headings similarly */
-
-/* Paragraphs and text */
-p {
-    margin: 0 0 1rem 0; /* Consistent spacing */
-    font-size: 1rem;
-}
-/* Small print */
-small {
-    font-size: 0.8rem;
-}
-
-/* Layout containers for consistency */
-.container {
-    width: 100%;
-    max-width: 1200px; /* Max width for large screens */
-    margin: 0 auto; /* Center container */
-    padding: 1rem;
-}
-
-/* Responsive images */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-    object-fit: cover;
-}
-
-/* Utility classes for flex layout */
-.flex {
-    display: flex;
-}
-.flex-column {
-    flex-direction: column;
-}
-.justify-center {
-    justify-content: center;
-}
-.align-center {
-    align-items: center;
-}
-
-/* Buttons styling for most industry use cases */
-.btn {
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 4px;
-    border: none;
-    transition: background-color 0.2s ease;
-}
-.btn-primary {
-    background-color: #0070f3;
-    color: #fff;
-}
-.btn-primary:hover {
-    background-color: #005bb5;
-}
-/* And other btn types as needed */
-
-/* Responsive typography: scale fonts */
-@media (max-width: 768px) {
-    html {
-        font-size: 14px; /* Slightly smaller base font on mobile devices */
-    }
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
-    /* Adjust other texts for smaller screens */
+* {
+    box-sizing: border-box;
 }
