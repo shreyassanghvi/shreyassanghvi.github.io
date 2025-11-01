@@ -1,198 +1,202 @@
+
 /* Top Navigation */
 .topNav {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 32px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1.1rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.1rem;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #202020;
+    text-decoration: none;
 }
 
 
 .dot {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background: #FDBA00;
-  border-radius: 50%;
-  margin-right: 7px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #FDBA00;
+    border-radius: 50%;
+    margin-right: 7px;
 }
 
 /* Navigation Links */
 .navLinks a {
-  margin: 0 8px;
-  color: #2d2d2d;
-  font-weight: 400;
+    margin: 0 8px;
+    color: #2d2d2d;
+    font-weight: 400;
 }
 
 /* Divider in nav */
 .divider {
-  margin: 0 5px;
-  color: #999;
+    margin: 0 5px;
+    color: #999;
 }
 
 /* Main Content */
 .main {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 90px; /* For nav */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px; /* For nav */
 }
 
 /* Hero Section */
 .hero {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 /* Profile Image */
 .profileImg {
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.10);
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.10);
 }
 
 /* Hero Text */
 .heroText {
-  max-width: 470px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* Greeting Header */
 .hello {
-  font-size: 4.5rem;
-  font-weight: 700;
-  margin-bottom: 0;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
 /* About Title */
 .aboutTitle {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 22px 0 5px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 22px 0 5px 0;
 }
 
 /* About Text */
 .aboutText {
-  font-size: 1.08rem;
-  color: #3a3a3a;
-  margin-bottom: 32px;
+    font-size: 1.08rem;
+    color: #3a3a3a;
+    margin-bottom: 32px;
 }
 
 /* Button Group */
 .buttonGroup {
-  display: flex;
-  gap: 28px;
-  margin-top: 7px;
+    display: flex;
+    gap: 28px;
+    margin-top: 7px;
 }
 
 /* Buttons common style */
 .circleButton {
-  width: 124px;
-  height: 124px;
-  border-radius: 50%;
-  font-weight: 700;
-  font-size: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  border: 1px solid #000; /* solid black border */
-  margin-right: 10px;
-  outline: none;
-  transition: border-color 0.2s;
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    border: 1px solid #000; /* solid black border */
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.2s;
 }
 
 /* Special button backgrounds and colors */
 .resumeBtn {
-  background: #FDBA00;
+    background: #FDBA00;
 }
 
 .projectsBtn {
-  background: #F64B30;
+    background: #F64B30;
 }
 
 .contactBtn {
-  background: #86DEDF;
-  color: #222;
+    background: #86DEDF;
+    color: #222;
 }
 
 /* Hover effect for buttons */
 .circleButton:hover {
-  filter: brightness(92%);
+    filter: brightness(92%);
 }
 
 /* Footer styles */
 .footer {
-  width: 95vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 2vw;
-  background: transparent;
-  font-size: 1rem;
-  padding: 16px 0 12px 0;
-  box-sizing: border-box;
-  border-top: 1px solid #e0e0e0;
-  letter-spacing: normal;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 2vw;
+    background: transparent;
+    font-size: 1rem;
+    padding: 16px 0 12px 0;
+    box-sizing: border-box;
+    border-top: 1px solid #e0e0e0;
+    letter-spacing: normal;
 }
+
 .footer b {
-  font-weight: 600;
-  font-size: 20px;  /* Labels e.g. Phone, Email, Follow Me */
-  letter-spacing: normal;
+    font-weight: 600;
+    font-size: 20px; /* Labels e.g. Phone, Email, Follow Me */
+    letter-spacing: normal;
 }
 
 .footer div span,
 .footer div a {
-  font-weight: 400;  /* normal weight */
-  font-size: 15px;   /* text below labels */
-  letter-spacing: normal;
+    font-weight: 400; /* normal weight */
+    font-size: 15px; /* text below labels */
+    letter-spacing: normal;
 }
 
 .footer div {
-  min-width: 120px;
+    min-width: 120px;
 }
 
 .socialIcon {
-  display: inline-block;
-  font-size: 25px; /* display as larger icons */
-  color: #000; /* black */
-  margin-right: 20px;
-  transition: color 0.2s ease;
+    display: inline-block;
+    font-size: 25px; /* display as larger icons */
+    color: #000; /* black */
+    margin-right: 20px;
+    transition: color 0.2s ease;
 }
 
 .socialIcon:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .socialIcon:hover {
-  color: #ffcc00; /* subtle hover color */
+    color: #ffcc00; /* subtle hover color */
 }
 
 /* Copyright section styling */
 .copyrightSection {
-  font-size: 15px;
-  color: #888;
-  text-align: right;
-  min-width: 150px;
-  letter-spacing: normal;
+    font-size: 15px;
+    color: #888;
+    text-align: right;
+    min-width: 150px;
+    letter-spacing: normal;
 }
