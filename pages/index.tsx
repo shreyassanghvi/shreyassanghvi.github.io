@@ -37,7 +37,7 @@ export default function Home() {
                         <div className={styles.buttonGroup}>
                             <button
                                 className={`${styles.circleButton} ${styles.resumeBtn}`}
-                                onClick={() => window.open("${basePath}/shreyas_sanghvi.pdf", "_blank")}
+                                onClick={() => window.open(`${basePath}/shreyas_sanghvi.pdf`, "_blank")}
                             >
                                 Resume
                             </button>
