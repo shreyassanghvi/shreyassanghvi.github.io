@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import styles from "../styles/Index.module.css";
-import {useRouter} from "next/router";
-import {motion} from "framer-motion";
+import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 export default function Home() {
     const router = useRouter();
@@ -11,9 +11,9 @@ export default function Home() {
         <Layout>
             <main className={styles.main}>
                 <motion.div
-                    initial={{opacity: 0, y: 50}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 0.8, ease: "easeOut"}}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                     className={styles.hero}
                 >
                     {/* Photo on top in mobile, left on desktop */}
