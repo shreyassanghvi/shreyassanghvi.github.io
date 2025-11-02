@@ -1,18 +1,19 @@
 import Layout from "@/components/Layout";
 import styles from "../styles/Index.module.css";
-import { useRouter } from "next/router";
-import { motion } from "framer-motion";
+import {useRouter} from "next/router";
+import {motion} from "framer-motion";
 
 export default function Home() {
     const router = useRouter();
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
     return (
         <Layout>
             <main className={styles.main}>
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    initial={{opacity: 0, y: 50}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{duration: 0.8, ease: "easeOut"}}
                     className={styles.hero}
                 >
                     {/* Photo on top in mobile, left on desktop */}
@@ -26,15 +27,17 @@ export default function Home() {
                         <h1 className={styles.hello}>Hello</h1>
                         <p className={styles.aboutTitle}>A Bit About Me</p>
                         <p className={styles.aboutText}>
-                            I’m a graduate student in biomedical engineering focused on medical imaging, machine learning applications, and hardware development, particularly with
-                            force sensors and DAQ systems. I enjoy research in ophthalmology imaging and developing innovative hardware-software integrations.
-                            <br />
+                            I’m a graduate student in biomedical engineering focused on medical imaging, machine
+                            learning applications, and hardware development, particularly with
+                            force sensors and DAQ systems. I enjoy research in ophthalmology imaging and developing
+                            innovative hardware-software integrations.
+                            <br/>
                             Here you can explore my work, projects, and get in touch.
                         </p>
                         <div className={styles.buttonGroup}>
                             <button
                                 className={`${styles.circleButton} ${styles.resumeBtn}`}
-                                onClick={() => window.open("/Shreyas_Sanghvi.pdf", "_blank")}
+                                onClick={() => window.open("${basePath}/shreyas_sanghvi.pdf", "_blank")}
                             >
                                 Resume
                             </button>

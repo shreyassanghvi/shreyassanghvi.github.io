@@ -1,10 +1,12 @@
-import path from "path";
-import type { NextConfig } from "next";
+const path = require('path');
 
-const nextConfig: NextConfig = {
-  turbopack: {
-    root: path.resolve(__dirname),
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    turbopack: {
+        root: path.resolve(__dirname),
+    },
+    basePath: '',       // no basePath since repo is username.github.io
+    assetPrefix: '',    // no asset prefix needed
 };
 
-export default nextConfig;
+module.exports = nextConfig;

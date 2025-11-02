@@ -6,6 +6,8 @@ import Link from "next/link";
 const emailChars = [104, 101, 108, 108, 111, 64, 115, 104, 114, 101, 121, 97, 115, 115, 97, 110, 103, 104, 118, 105, 46, 109, 101];
 const email = emailChars.map(c => String.fromCharCode(c)).join("");
 export default function Layout({children}: { children: React.ReactNode }) {
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
     return (
         <>
             <Head>
@@ -19,7 +21,9 @@ export default function Layout({children}: { children: React.ReactNode }) {
                     Shreyas Sanghvi
                 </Link>
                 <div className={styles.navLinks}>
-                    <a href="/shreyas_sanghvi.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a href={`${basePath}/shreyas_sanghvi.pdf`} target="_blank" rel="noopener noreferrer">
+                        Resume
+                    </a>
                     <span className={styles.divider}>|</span>
                     <a href="/projects">Projects</a>
                 </div>
