@@ -23,7 +23,9 @@ export default function Layout({children}: { children: React.ReactNode }) {
                         Resume
                     </a>
                     <span className={styles.divider}>|</span>
-                    <a href="/projects">Projects</a>
+                    <Link href="/projects">
+                        Projects
+                    </Link>
                 </div>
             </nav>
 
@@ -32,10 +34,6 @@ export default function Layout({children}: { children: React.ReactNode }) {
             </div>
 
             <footer className={styles.footer}>
-                <div>
-                    <b>Phone</b><br/>
-                    <span>(412)-444-5230</span>
-                </div>
                 <div>
                     <b>Email</b><br/>
                     <a href={`mailto:${email}`}>
