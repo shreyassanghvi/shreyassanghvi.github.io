@@ -92,19 +92,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  test-deploy:
-    name: Deploy Test
-    needs: build
-    runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.deploy_mode == 'test' }}
-    steps:
-      - name: Upload Artifact (test)
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
-      - name: Deploy Test Server
-        run: |
-          echo "Simulating Test Server Deployment..."
-          # Insert your test deployment commands here, for example deploy to another branch or hosting service
-          # e.g., git push to test branch or deploy to Firebase etc.
