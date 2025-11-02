@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 export default function Home() {
     const router = useRouter();
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
     return (
         <Layout>
@@ -37,7 +36,7 @@ export default function Home() {
                         <div className={styles.buttonGroup}>
                             <button
                                 className={`${styles.circleButton} ${styles.resumeBtn}`}
-                                onClick={() => window.open(`${basePath}/shreyas_sanghvi.pdf`, "_blank")}
+                                onClick={() => window.open(`/shreyas_sanghvi.pdf`, "_blank")}
                             >
                                 Resume
                             </button>
