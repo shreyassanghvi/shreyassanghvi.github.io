@@ -1,0 +1,26 @@
+[
+  {
+    "title": "HeartPrinter",
+    "description": "A Cable Driven Parallel Wire robot for epicardial interventions.",
+    "technologies": ["C/C++", "Python"],
+    "status": "active",
+    "githubUrl": "https://github.com/shreyassanghvi/heartprinter",
+    "imageUrl": "/project/default-project-banner.svg"
+  },
+  {
+    "title": "Retriever",
+    "description": "An open source quadruped build to explore sim-to-real and real-to-sim.",
+    "technologies": ["C/C++", "Python", "ROS", "Isaac Sim"],
+    "status": "experimental",
+    "githubUrl": "https://github.com/shreyassanghvi/retreiver",
+    "imageUrl": "/project/default-project-banner.svg"
+  },
+  {
+    "title": "FALCON",
+    "description": "Machine learning algorithm for automated localization of fovea from OCT scans for patients with ophthalmic pathologies.",
+    "technologies": ["Python"],
+    "status": "archived",
+    "githubUrl": "https://github.com/Kitiyaparnnn/Project-in-Biomedical-AI",
+    "imageUrl": "/project/FALCON.png"
+  }
+]

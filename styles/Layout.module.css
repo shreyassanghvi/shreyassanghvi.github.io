@@ -156,26 +156,29 @@
     }
 
     .footer {
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
-        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
         padding: 14px 0;
-        left: 0 !important;
-        position: static !important;
+        left: 0;
+        position: static;
     }
 
-    .footer div, .copyrightSection {
-        width: 100% !important;
-        min-width: unset !important;
+    .footer div,
+    .copyrightSection {
+        width: 100%;
+        min-width: unset;
         margin-bottom: 12px;
-        text-align: center !important;
+        text-align: center;
     }
 
-    .footer b, .footer span, .footer a {
-        width: 100% !important;
-        display: block !important;
-        text-align: center !important;
+    .footer b,
+    .footer span,
+    .footer a {
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 
     .socialIcon {
@@ -187,16 +190,15 @@
 /* Padding bottom to avoid footer overlap in short landscape views */
 @media (max-height: 480px) and (orientation: landscape) {
     .footer {
-        position: static !important;
-        width: 100% !important;
-        left: 0 !important;
+        position: static;
+        width: 100%;
+        left: 0;
         border-top: 1px solid #e0e0e0;
         padding: 10px 0;
     }
 
     .contentWrapper {
-        padding-bottom: 130px; /* adjust to your footer height + margin */
+        padding-bottom: 130px;
     }
-
 }
 

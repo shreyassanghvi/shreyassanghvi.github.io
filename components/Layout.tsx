@@ -3,8 +3,8 @@ import styles from "../styles/Layout.module.css";
 import {FaLinkedin, FaGithub} from "react-icons/fa";
 import Link from "next/link";
 
-const emailChars = [104, 101, 108, 108, 111, 64, 115, 104, 114, 101, 121, 97, 115, 115, 97, 110, 103, 104, 118, 105, 46, 109, 101];
-const email = emailChars.map(c => String.fromCharCode(c)).join("");
+const email = "hello@shreyassanghvi.me";
+
 export default function Layout({children}: { children: React.ReactNode }) {
     return (
         <>
@@ -36,19 +36,29 @@ export default function Layout({children}: { children: React.ReactNode }) {
             <footer className={styles.footer}>
                 <div>
                     <b>Email</b><br/>
-                    <a href={`mailto:${email}`}>
+                    <a href={`mailto:${email}`} aria-label={`Send email to ${email}`}>
                         {email}
                     </a>
                 </div>
 
                 <div>
                     <b>Follow Me</b><br/>
-                    <a href="https://www.linkedin.com/in/shreyas-sanghvi/" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin className={styles.socialIcon}/>
+                    <a
+                        href="https://www.linkedin.com/in/shreyas-sanghvi/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit my LinkedIn profile (opens in new tab)"
+                    >
+                        <FaLinkedin className={styles.socialIcon} aria-hidden="true"/>
                     </a>
 
-                    <a href="https://github.com/shreyassanghvi/" target="_blank" rel="noopener noreferrer">
-                        <FaGithub className={styles.socialIcon}/>
+                    <a
+                        href="https://github.com/shreyassanghvi/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit my GitHub profile (opens in new tab)"
+                    >
+                        <FaGithub className={styles.socialIcon} aria-hidden="true"/>
                     </a>
                 </div>
                 <div className={styles.copyrightSection}>
