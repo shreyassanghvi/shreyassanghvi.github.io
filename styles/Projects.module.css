@@ -157,6 +157,7 @@
 @media (max-width: 768px) {
     .main {
         padding: 1.5rem;
+        padding-top: 6rem;
     }
 
     .title {
@@ -174,5 +175,15 @@
 
     .projectsGrid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding-top: 5.5rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
     }
 }
