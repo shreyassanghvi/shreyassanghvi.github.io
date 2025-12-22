@@ -29,10 +29,8 @@ export default function Home() {
                         <h1 className={styles.hello}>Hello</h1>
                         <p className={styles.aboutTitle}>A Bit About Me</p>
                         <p className={styles.aboutText}>
-                            I’m a graduate student in biomedical engineering focused on medical imaging, machine
-                            learning applications, and hardware development, particularly with
-                            force sensors and DAQ systems. I enjoy research in ophthalmology imaging and developing
-                            innovative hardware-software integrations.
+                            I'm a biomedical engineering graduate student bridging robotics, machine learning, and medical innovation. From building cable-driven robots for cardiac interventions to developing AI algorithms for ophthalmology diagnostics, I thrive at the intersection of hardware and intelligent systems. Currently exploring sim-to-real robotics and medical device development.
+                            <br/>
                             <br/>
                             Here you can explore my work, projects, and get in touch.
                         </p>

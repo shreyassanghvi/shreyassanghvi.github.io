@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import styles from "@/styles/Projects.module.css";
@@ -94,6 +95,12 @@ function ProjectCard({ project }: { project: Project }) {
 }
 
 export default function Projects() {
+    const [filter, setFilter] = useState<string>("all");
+
+    const filteredProjects = filter === "all"
+        ? projects
+        : projects.filter(project => project.status === filter);
+
     return (
         <Layout>
             <Head>
@@ -104,13 +111,47 @@ export default function Projects() {
                 <h1 className={styles.title}>
                     My Projects
                 </h1>
-                {projects.length === 0 ? (
+
+                <div className={styles.filterContainer}>
+                    <button
+                        className={`${styles.filterButton} ${filter === "all" ? styles.active : ""}`}
+                        onClick={() => setFilter("all")}
+                    >
+                        All
+                    </button>
+                    <button
+                        className={`${styles.filterButton} ${filter === "active" ? styles.active : ""}`}
+                        onClick={() => setFilter("active")}
+                    >
+                        Active
+                    </button>
+                    <button
+                        className={`${styles.filterButton} ${filter === "in-progress" ? styles.active : ""}`}
+                        onClick={() => setFilter("in-progress")}
+                    >
+                        In Progress
+                    </button>
+                    <button
+                        className={`${styles.filterButton} ${filter === "archived" ? styles.active : ""}`}
+                        onClick={() => setFilter("archived")}
+                    >
+                        Archived
+                    </button>
+                    <button
+                        className={`${styles.filterButton} ${filter === "experimental" ? styles.active : ""}`}
+                        onClick={() => setFilter("experimental")}
+                    >
+                        Experimental
+                    </button>
+                </div>
+
+                {filteredProjects.length === 0 ? (
                     <p className={styles.emptyState}>
-                        No projects yet. Add some to the projects array!
+                        No projects found for this filter.
                     </p>
                 ) : (
                     <div className={styles.projectsGrid}>
-                        {projects.map((project, index) => (
+                        {filteredProjects.map((project, index) => (
                             <ProjectCard key={index} project={project} />
                         ))}
                     </div>
