@@ -3,11 +3,9 @@ import styles from "../styles/Layout.module.css";
 import {FaLinkedin, FaGithub} from "react-icons/fa";
 import Link from "next/link";
 
-const emailChars = [104, 101, 108, 108, 111, 64, 115, 104, 114, 101, 121, 97, 115, 115, 97, 110, 103, 104, 118, 105, 46, 109, 101];
-const email = emailChars.map(c => String.fromCharCode(c)).join("");
-export default function Layout({children}: { children: React.ReactNode }) {
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const email = "hello@shreyassanghvi.me";
 
+export default function Layout({children}: { children: React.ReactNode }) {
     return (
         <>
             <Head>
@@ -21,11 +19,13 @@ export default function Layout({children}: { children: React.ReactNode }) {
                     Shreyas Sanghvi
                 </Link>
                 <div className={styles.navLinks}>
-                    <a href={`${basePath}/shreyas_sanghvi.pdf`} target="_blank" rel="noopener noreferrer">
+                    <a href={`/shreyas_sanghvi.pdf`} target="_blank" rel="noopener noreferrer">
                         Resume
                     </a>
                     <span className={styles.divider}>|</span>
-                    <a href="/projects">Projects</a>
+                    <Link href="/projects">
+                        Projects
+                    </Link>
                 </div>
             </nav>
 
@@ -35,24 +35,30 @@ export default function Layout({children}: { children: React.ReactNode }) {
 
             <footer className={styles.footer}>
                 <div>
-                    <b>Phone</b><br/>
-                    <span>(412)-444-5230</span>
-                </div>
-                <div>
                     <b>Email</b><br/>
-                    <a href={`mailto:${email}`}>
+                    <a href={`mailto:${email}`} aria-label={`Send email to ${email}`}>
                         {email}
                     </a>
                 </div>
 
                 <div>
                     <b>Follow Me</b><br/>
-                    <a href="https://www.linkedin.com/in/shreyas-sanghvi/" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin className={styles.socialIcon}/>
+                    <a
+                        href="https://www.linkedin.com/in/shreyas-sanghvi/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit my LinkedIn profile (opens in new tab)"
+                    >
+                        <FaLinkedin className={styles.socialIcon} aria-hidden="true"/>
                     </a>
 
-                    <a href="https://github.com/shreyassanghvi/" target="_blank" rel="noopener noreferrer">
-                        <FaGithub className={styles.socialIcon}/>
+                    <a
+                        href="https://github.com/shreyassanghvi/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit my GitHub profile (opens in new tab)"
+                    >
+                        <FaGithub className={styles.socialIcon} aria-hidden="true"/>
                     </a>
                 </div>
                 <div className={styles.copyrightSection}>

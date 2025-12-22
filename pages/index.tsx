@@ -1,10 +1,9 @@
 import Layout from "@/components/Layout";
 import styles from "../styles/Index.module.css";
-import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Home() {
-    const router = useRouter();
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
     return (
@@ -17,10 +16,13 @@ export default function Home() {
                     className={styles.hero}
                 >
                     {/* Photo on top in mobile, left on desktop */}
-                    <img
+                    <Image
                         src="/profile.jpg"
                         alt="Shreyas Sanghvi Profile"
+                        width={450}
+                        height={450}
                         className={styles.profileImg}
+                        priority
                     />
                     {/* Text and buttons */}
                     <div className={styles.heroText}>
@@ -35,18 +37,22 @@ export default function Home() {
                             Here you can explore my work, projects, and get in touch.
                         </p>
                         <div className={styles.buttonGroup}>
-                            <button
+                            <a
+                                href={`${basePath}/shreyas_sanghvi.pdf`}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className={`${styles.circleButton} ${styles.resumeBtn}`}
-                                onClick={() => window.open(`${basePath}/shreyas_sanghvi.pdf`, "_blank")}
+                                aria-label="View my resume (opens in new tab)"
                             >
                                 Resume
-                            </button>
-                            <button
+                            </a>
+                            <a
+                                href="/projects"
                                 className={`${styles.circleButton} ${styles.projectsBtn}`}
-                                onClick={() => router.push("/projects")}
+                                aria-label="View my projects"
                             >
                                 Projects
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </motion.div>
