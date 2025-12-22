@@ -18,13 +18,17 @@ This folder contains project data displayed on the portfolio website.
 
 | Status | Badge Color | Use Case |
 |--------|-------------|----------|
-| `"completed"` | 🟢 Green | Project is finished |
-| `"in-progress"` | 🟡 Yellow | Currently working on it |
 | `"active"` | 🔵 Blue | Live/deployed and actively maintained |
-| `"experimental"` | 🟣 Purple | Prototype/testing phase |
+| `"in-progress"` | 🟡 Yellow | Currently working on it |
 | `"archived"` | ⚪ Gray | No longer maintained |
+| `"experimental"` | 🟣 Purple | Prototype/testing phase |
 
 **Note:** If `status` is omitted, no badge will be displayed.
+
+## Project Images
+
+- Place project images in the `/public/project/` folder
+- If no `imageUrl` is provided, a default banner will be used: `/project/default-project-banner.svg`
 
 ## Example
 
@@ -36,7 +40,7 @@ This folder contains project data displayed on the portfolio website.
     "technologies": ["C/C++", "Python"],
     "status": "active",
     "githubUrl": "https://github.com/shreyassanghvi/heartprinter",
-    "imageUrl": "/images/project-screenshot.png"
+    "imageUrl": "/project/heartprinter.png"
   },
   {
     "title": "Another Project",
