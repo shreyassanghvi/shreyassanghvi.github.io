@@ -1,9 +1,9 @@
 /* Main Content */
 .main {
-    min-height: 100vh;
     display: flex;
     justify-content: center; /* horizontal centering */
     align-items: center;     /* vertical centering */
+    padding: 2rem 0;
 }
 
 /* Hero Section */
@@ -108,9 +108,7 @@
 @media (max-width: 768px) {
     .main {
         flex-direction: column;
-        padding-top: 100px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 20px;
         align-items: center;
     }
 

@@ -2,15 +2,14 @@
 
 /* Top Navigation */
 .topNav {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 32px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     font-size: 1.1rem;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -45,16 +44,15 @@
 
 /* Footer styles */
 .footer {
-    width: 95vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 2vw;
+    position: relative;
     background: transparent;
     font-size: 1rem;
-    padding: 16px 0 12px 0;
+    padding: 32px 32px 24px 32px;
+    margin-top: 60px;
     box-sizing: border-box;
     border-top: 1px solid #e0e0e0;
     letter-spacing: normal;
@@ -93,6 +91,10 @@
     color: #ffcc00; /* subtle hover color */
 }
 
+.contentWrapper {
+    box-sizing: border-box;
+}
+
 .copyrightSection {
     font-size: 15px;
     color: #888;
@@ -120,14 +122,17 @@
         justify-content: space-around;
     }
 
+    .contentWrapper {
+        min-height: auto;
+    }
+
     .footer {
         flex-direction: column;
         align-items: flex-start;
-        width: 95vw;
-        left: 2.5vw;
+        width: 100%;
         font-size: 15px;
-        position: static;
-        padding: 16px 0;
+        padding: 20px;
+        margin-top: 40px;
     }
 
     .footer div, .copyrightSection {
@@ -155,14 +160,17 @@
         gap: 16px;
     }
 
+    .contentWrapper {
+        min-height: auto;
+    }
+
     .footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
         width: 100%;
-        padding: 14px 0;
-        left: 0;
-        position: static;
+        padding: 16px;
+        margin-top: 32px;
     }
 
     .footer div,
@@ -184,21 +192,6 @@
     .socialIcon {
         font-size: 20px;
         margin-right: 16px;
-    }
-}
-
-/* Padding bottom to avoid footer overlap in short landscape views */
-@media (max-height: 480px) and (orientation: landscape) {
-    .footer {
-        position: static;
-        width: 100%;
-        left: 0;
-        border-top: 1px solid #e0e0e0;
-        padding: 10px 0;
-    }
-
-    .contentWrapper {
-        padding-bottom: 130px;
     }
 }
 

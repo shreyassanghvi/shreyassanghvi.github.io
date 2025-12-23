@@ -13,7 +13,7 @@
     "technologies": ["C/C++", "Python", "ROS", "Isaac Sim"],
     "status": "experimental",
     "githubUrl": "https://github.com/shreyassanghvi/retreiver",
-    "imageUrl": "/project/default-project-banner.svg"
+    "imageUrl": "/project/retriever.png"
   },
   {
     "title": "FALCON",
