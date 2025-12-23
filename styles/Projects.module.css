@@ -1,5 +1,4 @@
 .main {
-    padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -157,7 +156,6 @@
 @media (max-width: 768px) {
     .main {
         padding: 1.5rem;
-        padding-top: 6rem;
     }
 
     .title {
@@ -180,7 +178,7 @@
 
 @media (max-width: 480px) {
     .main {
-        padding-top: 5.5rem;
+        padding: 1.5rem;
     }
 
     .title {
