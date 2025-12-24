@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import styles from "../styles/Index.module.css";
+import styles from "@/styles/Index.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -29,7 +29,7 @@ export default function Home() {
                         <h1 className={styles.hello}>Hello</h1>
                         <p className={styles.aboutTitle}>A Bit About Me</p>
                         <p className={styles.aboutText}>
-                            I'm a biomedical engineering graduate student bridging robotics, machine learning, and medical innovation. From building cable-driven robots for cardiac interventions to developing AI algorithms for ophthalmology diagnostics, I thrive at the intersection of hardware and intelligent systems. Currently exploring sim-to-real robotics and medical device development.
+                            I'm a Biomedical Engineer bridging robotics, machine learning, and medical innovation. From building cable-driven robots for cardiac interventions to developing AI algorithms for ophthalmology diagnostics, I thrive at the intersection of hardware and intelligent systems. Currently exploring sim-to-real robotics and medical device development.
                             <br/>
                             <br/>
                             Here you can explore my work, projects, and get in touch.

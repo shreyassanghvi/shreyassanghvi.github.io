@@ -1,10 +1,69 @@
+:root {
+    /* Light theme colors */
+    --bg-primary: #f1efef;
+    --bg-secondary: #ffffff;
+    --text-primary: #222;
+    --text-secondary: #3a3a3a;
+    --text-muted: #555;
+    --text-light: #666;
+    --text-lighter: #888;
+    --button-text: #000000;
+    --accent-yellow: #FDBA00;
+    --accent-orange: #F64B30;
+    --accent-cyan: #86DEDF;
+    --border-color: #ddd;
+    --border-light: #e0e0e0;
+    --shadow-sm: rgba(0, 0, 0, 0.1);
+    --shadow-md: rgba(0, 0, 0, 0.15);
+    --shadow-lg: rgba(0, 0, 0, 0.2);
+    --link-color: #0070f3;
+    --badge-active-bg: #cfe2ff;
+    --badge-active-text: #084298;
+    --badge-progress-bg: #fff3cd;
+    --badge-progress-text: #856404;
+    --badge-archived-bg: #e2e3e5;
+    --badge-archived-text: #6c757d;
+    --badge-experimental-bg: #e2d9f3;
+    --badge-experimental-text: #5a2d82;
+}
+
+html[data-theme="dark"] {
+    /* Dark theme colors */
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2a2a2a;
+    --text-primary: #e0e0e0;
+    --text-secondary: #c0c0c0;
+    --text-muted: #a0a0a0;
+    --text-light: #b0b0b0;
+    --text-lighter: #c0c0c0;
+    --button-text: #000000;
+    --accent-yellow: #FFC107;
+    --accent-orange: #FF6B50;
+    --accent-cyan: #4DD0E1;
+    --border-color: #404040;
+    --border-light: #353535;
+    --shadow-sm: rgba(0, 0, 0, 0.3);
+    --shadow-md: rgba(0, 0, 0, 0.4);
+    --shadow-lg: rgba(0, 0, 0, 0.5);
+    --link-color: #4DA6FF;
+    --badge-active-bg: #1e3a5f;
+    --badge-active-text: #6ea8fe;
+    --badge-progress-bg: #4a3c1a;
+    --badge-progress-text: #ffc107;
+    --badge-archived-bg: #353535;
+    --badge-archived-text: #adb5bd;
+    --badge-experimental-bg: #3a2a4a;
+    --badge-experimental-text: #b794f6;
+}
+
 html, body {
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #f1efef;
-    color: #222;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {

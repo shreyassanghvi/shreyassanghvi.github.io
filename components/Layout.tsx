@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Layout.module.css";
 import {FaLinkedin, FaGithub} from "react-icons/fa";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 const email = "hello@shreyassanghvi.me";
 
@@ -11,7 +12,7 @@ export default function Layout({children}: { children: React.ReactNode }) {
             <Head>
                 <title>Hello | Shreyas Sanghvi</title>
                 <meta name="description"
-                      content="Graduate student in medical imaging, hardware, and machine learning."/>
+                      content="Biomedcal Engineer in medical devices, robotics, and machine learning."/>
             </Head>
             <nav className={styles.topNav}>
                 <Link href="/" className={styles.logo} aria-label="Home">
@@ -26,6 +27,8 @@ export default function Layout({children}: { children: React.ReactNode }) {
                     <Link href="/projects">
                         Projects
                     </Link>
+                    <span className={styles.divider}>|</span>
+                    <ThemeToggle />
                 </div>
             </nav>
 
