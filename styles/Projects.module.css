@@ -6,7 +6,7 @@
 .title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .filterContainer {
@@ -18,9 +18,9 @@
 
 .filterButton {
     padding: 0.5rem 1.25rem;
-    border: 2px solid #ddd;
-    background-color: #fff;
-    color: #555;
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    color: var(--text-muted);
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 500;
@@ -29,18 +29,18 @@
 }
 
 .filterButton:hover {
-    border-color: #999;
-    background-color: #f9f9f9;
+    border-color: var(--text-light);
+    background-color: var(--bg-primary);
 }
 
 .filterButton.active {
-    background-color: #333;
-    color: #fff;
-    border-color: #333;
+    background-color: var(--text-primary);
+    color: var(--bg-secondary);
+    border-color: var(--text-primary);
 }
 
 .emptyState {
-    color: #666;
+    color: var(--text-light);
     font-size: 1.125rem;
 }
 
@@ -51,17 +51,17 @@
 }
 
 .projectCard {
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.5rem;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-secondary);
+    box-shadow: 0 2px 4px var(--shadow-sm);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .projectCard:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px var(--shadow-md);
 }
 
 .projectImage {
@@ -82,7 +82,7 @@
 
 .projectTitle {
     margin: 0;
-    color: #333;
+    color: var(--text-primary);
     flex: 1;
 }
 
@@ -98,27 +98,27 @@
 }
 
 .status-active {
-    background-color: #cfe2ff;
-    color: #084298;
+    background-color: var(--badge-active-bg);
+    color: var(--badge-active-text);
 }
 
 .status-in-progress {
-    background-color: #fff3cd;
-    color: #856404;
+    background-color: var(--badge-progress-bg);
+    color: var(--badge-progress-text);
 }
 
 .status-archived {
-    background-color: #e2e3e5;
-    color: #6c757d;
+    background-color: var(--badge-archived-bg);
+    color: var(--badge-archived-text);
 }
 
 .status-experimental {
-    background-color: #e2d9f3;
-    color: #5a2d82;
+    background-color: var(--badge-experimental-bg);
+    color: var(--badge-experimental-text);
 }
 
 .projectDescription {
-    color: #666;
+    color: var(--text-light);
     margin-bottom: 1rem;
     line-height: 1.6;
 }
@@ -131,11 +131,11 @@
 }
 
 .technologyTag {
-    background-color: #f0f0f0;
+    background-color: var(--border-light);
     padding: 0.25rem 0.75rem;
     border-radius: 12px;
     font-size: 0.875rem;
-    color: #555;
+    color: var(--text-muted);
 }
 
 .linksContainer {
@@ -144,7 +144,7 @@
 }
 
 .projectLink {
-    color: #0070f3;
+    color: var(--link-color);
     text-decoration: none;
     font-weight: 500;
 }

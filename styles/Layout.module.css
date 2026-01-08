@@ -17,7 +17,7 @@
     align-items: center;
     font-weight: 700;
     font-size: 1.4rem;
-    color: #202020;
+    color: var(--text-primary);
     text-decoration: none;
 }
 
@@ -25,21 +25,27 @@
     display: inline-block;
     width: 25px;
     height: 25px;
-    background: #FDBA00;
+    background: var(--accent-yellow);
     border-radius: 50%;
     margin-right: 7px;
 }
 
 /* Navigation Links */
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .navLinks a {
     margin: 0 8px;
-    color: #2d2d2d;
+    color: var(--text-secondary);
     font-weight: 400;
 }
 
 .divider {
     margin: 0 5px;
-    color: #999;
+    color: var(--text-light);
 }
 
 /* Footer styles */
@@ -54,7 +60,7 @@
     padding: 32px 32px 24px 32px;
     margin-top: 60px;
     box-sizing: border-box;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--border-light);
     letter-spacing: normal;
 }
 
@@ -78,7 +84,7 @@
 .socialIcon {
     display: inline-block;
     font-size: 25px; /* larger icons */
-    color: #000;
+    color: var(--text-primary);
     margin-right: 20px;
     transition: color 0.2s ease;
 }
@@ -88,7 +94,7 @@
 }
 
 .socialIcon:hover {
-    color: #ffcc00; /* subtle hover color */
+    color: var(--accent-yellow); /* subtle hover color */
 }
 
 .contentWrapper {
@@ -97,7 +103,7 @@
 
 .copyrightSection {
     font-size: 15px;
-    color: #888;
+    color: var(--text-lighter);
     text-align: right;
     min-width: 150px;
     letter-spacing: normal;
